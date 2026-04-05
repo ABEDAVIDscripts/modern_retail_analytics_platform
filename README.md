@@ -391,20 +391,22 @@ dbt test
 <BR>
 
 - dbt Run Result 
-<img height="250" alt="dbt run recent" src="https://github.com/user-attachments/assets/1f690c3b-a111-4e77-bf55-88b4082ee753" />
+<img height="200" alt="dbt run recent" src="https://github.com/user-attachments/assets/1f690c3b-a111-4e77-bf55-88b4082ee753" />
 
+<BR>
 <BR>
 
 - dbt Test Result
-<img height="250" alt="dbt test recent" src="https://github.com/user-attachments/assets/38908749-bd9e-4d48-8516-9dda8070d9c0" />
+<img height="200" alt="dbt test recent" src="https://github.com/user-attachments/assets/38908749-bd9e-4d48-8516-9dda8070d9c0" />
 
 
-<BR>
-<BR>
-<BR>
+  <br>
+  <br>
+  
+  <br>
 
 
-### Analytics Marts
+## Analytics Marts
 #### 1. Sales Analytics
 - sales_daily: Daily revenue, orders, items sold, discounts <br>
 <img  height="250" alt="sales_daily" src="https://github.com/user-attachments/assets/abf506c5-a826-4ea1-93d9-a9ecbd63d535" /> 
