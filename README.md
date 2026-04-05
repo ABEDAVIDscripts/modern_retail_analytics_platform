@@ -63,17 +63,19 @@ Power BI Dashboard
 <BR>
 
 ## Data Warehouse (BigQuery)
-A cloud-native data warehouse was implemented using Google BigQuery to support scalable, high-performance analytics. 
+A cloud-native data warehouse was implemented using Google BigQuery to support scalable, high-performance analytics. <br>
+
+<img height="300" alt="data warehouse env" src="https://github.com/user-attachments/assets/a1132c11-f4c1-492f-9132-9cc24119035e" /> 
 
 <br>
 
 The environment was structured into two logical datasets to separate raw ingestion from transformed analytics layers:
 
-1. Raw Layer (`retail_raw`) <BR>
-This dataset stores the original source data exactly as ingested from operational systems. <BR>
-Tables include: transactions, customers, products, stores, employees, discounts
+#### 1.  Raw Layer (`retail_raw`) <BR>
+<img height="300" alt="data warehouse env_raw" src="https://github.com/user-attachments/assets/c0458725-2d86-455c-96c3-978ed26cdc44" /> <br>
 
-<BR>
+This dataset stores the original source data exactly as ingested from operational systems. <BR>
+Tables include: transactions, customers, products, stores, employees, discounts <BR>
 
 Key Characteristics: <BR>
 - Serves as the single source of truth
@@ -83,10 +85,12 @@ Key Characteristics: <BR>
 
 <BR>
 
-2. Analytics Layer (`retail_dw`) <BR>
-This dataset contains all transformed, analytics-ready models built using dbt.
+#### 2.  Analytics Layer (`retail_dw`) <BR>
+This dataset contains all transformed, analytics-ready models built using dbt. It is organized into structured layers:
 
-It is organized into structured layers: <BR>
+- Staging Layer:
+  - dbt Transformation Layer: stg_transactions, stg_customers, stg_products, stg_stores, stg_employees, stg_discounts
+
 
 - Core Models (Star Schema) <BR>
   - Fact Table: `fct_transactions` (line-level transactional grain)
@@ -99,9 +103,17 @@ It is organized into structured layers: <BR>
   - Customer : customer_lifetime_value & customer_rfm
 
 
+<BR>
+<br>
 
-<BR>
-<BR>
+#### Implementation Highlights
+- Built using dbt-managed transformations with modular SQL models
+- Materialized tables optimized for analytical query performance
+- Leveraged BigQuery’s distributed architecture for efficient large-scale aggregations
+- Designed with a clear separation of concerns:
+  - Raw ingestion (retail_raw)
+  - Business-ready analytics (retail_dw)
+
 <BR>
 
 
