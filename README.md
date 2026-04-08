@@ -557,9 +557,9 @@ group by
 The lineage graph illustrates the full dependency flow from raw data sources to final analytics marts. <br>
 This ensures transparency, traceability, and impact analysis across the pipeline. <br>
 
-<img height="400" alt="Lineage DAG updated" src="https://github.com/user-attachments/assets/87927602-3918-40fa-ae62-0f176c476f79" /> <br>
+<img height="400" alt="Lineage DAG updated 0" src="https://github.com/user-attachments/assets/e9d69f04-edc6-406b-b37e-ed2693010754" /> <br>
 
-<img height="400" alt="customer_rfm doc 2" src="https://github.com/user-attachments/assets/cbebc0b0-0891-4216-a759-c5126e11c83f" />
+<img height="400" alt="customer_rfm doc 2" src="https://github.com/user-attachments/assets/8f4c9025-bcff-45ab-9d61-f5232bd915f2" />
 
 <br>
 <br>
