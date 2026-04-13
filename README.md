@@ -75,7 +75,7 @@ A cloud-native data warehouse was implemented using Google BigQuery to support s
 ### 1.  Raw Layer (`retail_raw`) 
 
 This dataset stores the original source data exactly as ingested from operational systems. <BR>
-Tables include: transactions(6,416,827), customers, products, stores, employees, discounts <BR>
+Tables include: transactions (6,416,827), customers, products, stores, employees & discounts <BR>
 
 Key Characteristics: <BR>
 - Serves as the single source of truth
@@ -89,7 +89,7 @@ Key Characteristics: <BR>
 This dataset contains all transformed, analytics-ready models built using dbt. It is organized into structured layers:
 
 **i. Staging Tables** <br>
-- Transformation tables: stg_transactions, stg_customers, stg_products, stg_stores, stg_employees, stg_discounts
+- Transformation tables: stg_transactions, stg_customers, stg_products, stg_stores, stg_employees & stg_discounts
 
 
 **ii. Core Data Tables (Star Schema)** <BR>
