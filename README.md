@@ -102,11 +102,13 @@ This dataset contains all transformed, analytics-ready models built using dbt. I
 
 **iii. Analytics Tables** <br>
 - Sales: sales_daily, sales_by_store & sales_by_product <br>
-  <img height="300" alt="sales_daily query" src="https://github.com/user-attachments/assets/d41c8599-f4ac-4bd1-9436-462500c56b3d" /> <br>
+  - sales_daily <br>
+  <img height="350" alt="sales_daily query" src="https://github.com/user-attachments/assets/d41c8599-f4ac-4bd1-9436-462500c56b3d" /> <br>
 
 <br>
 
-- Customer: customer_lifetime_value & customer_rfm
+- Customer: customer_lifetime_value & customer_rfm <br>
+  - customer_rfm <br>
   <img height="300" alt="customer_rfm dw 2" src="https://github.com/user-attachments/assets/c888efcc-ec40-4fd1-bb7f-4af9b983e4f1" /> <BR>
 
 
@@ -186,11 +188,11 @@ row_number() over (
 - Example Staging Models:
 
   * stg_transactions (core transformation logic) <br>
-    <img height="250" alt="stg_transactions cleaning code upgrade" src="https://github.com/user-attachments/assets/09268317-e843-4abc-bd07-b15693c30513" /> <BR>
+    <img height="350" alt="stg_transactions cleaning code upgrade" src="https://github.com/user-attachments/assets/09268317-e843-4abc-bd07-b15693c30513" /> <BR>
 
 
   * stg_customers (1 of 6 staging models) <br>
-    <img height="250" alt="stg_customers cleaning code upgrade" src="https://github.com/user-attachments/assets/4f8bed3d-cd63-4d17-adde-fe658edcd9b0" />
+    <img height="350" alt="stg_customers cleaning code upgrade" src="https://github.com/user-attachments/assets/4f8bed3d-cd63-4d17-adde-fe658edcd9b0" />
 
 <BR>
 <BR>
@@ -290,7 +292,7 @@ left join {{ ref('dim_employees') }} e
 
 **ii. Dimension Models** <br>
  dim_customers (1 of 4 Dimension Models) <BR>
-  <img height="250" alt="dim_customers" src="https://github.com/user-attachments/assets/1f22a6ad-751b-43d3-84c9-7bbc08f90ce0" />
+  <img height= "350" alt="dim_customers" src="https://github.com/user-attachments/assets/1f22a6ad-751b-43d3-84c9-7bbc08f90ce0" />
 
 <br>
 
@@ -463,18 +465,18 @@ dbt test
 
 ### 6. Analytics Marts
 **i. Sales Analytics** <br>
-- sales_daily: Daily revenue, orders, items sold, discounts <br>
-  <img  height="250" alt="sales_daily" src="https://github.com/user-attachments/assets/abf506c5-a826-4ea1-93d9-a9ecbd63d535" /> <br>
+- sales_daily:  <br>
+  <img  height="350" alt="sales_daily" src="https://github.com/user-attachments/assets/abf506c5-a826-4ea1-93d9-a9ecbd63d535" /> <br>
 
 <br>
 
-- sales_by_store: Store-level performance and ranking <br>
-  <img height="250" alt="sales_by_store" src="https://github.com/user-attachments/assets/e8cb3be1-c154-41e6-8ba4-b39ef27db289" /> <br>
+- sales_by_store: <br>
+  <img height="350" alt="sales_by_store" src="https://github.com/user-attachments/assets/e8cb3be1-c154-41e6-8ba4-b39ef27db289" /> <br>
 
 <br>
 
-- sales_by_product: Product <br>
-  <img height="250" alt="sales_by_product" src="https://github.com/user-attachments/assets/fb5a50ca-8c92-4e65-bc7a-7ade0fe7823a" />
+- sales_by_product: <br>
+  <img height="350" alt="sales_by_product" src="https://github.com/user-attachments/assets/fb5a50ca-8c92-4e65-bc7a-7ade0fe7823a" />
 
 <br>  
 <br>
@@ -544,7 +546,7 @@ group by
 <br>
 
 - customer_rfm
-<img height="250" alt="customer_rfm" src="https://github.com/user-attachments/assets/2b30d85d-2143-409d-aa3d-b9bfcf0d99ec" />
+<img height="350" alt="customer_rfm" src="https://github.com/user-attachments/assets/2b30d85d-2143-409d-aa3d-b9bfcf0d99ec" />
 
 <br>
 
